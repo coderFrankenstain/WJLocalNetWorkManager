@@ -17,6 +17,8 @@
 		A3BA6E2B278BF09800DD59BD /* WJLocalNetWorkManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BA6E2A278BF09800DD59BD /* WJLocalNetWorkManagerTests.m */; };
 		A3BA6E35278BF09800DD59BD /* WJLocalNetWorkManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BA6E34278BF09800DD59BD /* WJLocalNetWorkManagerUITests.m */; };
 		A3BA6E37278BF09800DD59BD /* WJLocalNetWorkManagerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BA6E36278BF09800DD59BD /* WJLocalNetWorkManagerUITestsLaunchTests.m */; };
+		A3BA6E45278BF0AC00DD59BD /* WJLocalNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BA6E44278BF0AC00DD59BD /* WJLocalNetWorkManager.m */; };
+		A3BA6E48278BF0C200DD59BD /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3BA6E47278BF0C200DD59BD /* Network.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		A3BA6E30278BF09800DD59BD /* WJLocalNetWorkManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WJLocalNetWorkManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BA6E34278BF09800DD59BD /* WJLocalNetWorkManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJLocalNetWorkManagerUITests.m; sourceTree = "<group>"; };
 		A3BA6E36278BF09800DD59BD /* WJLocalNetWorkManagerUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJLocalNetWorkManagerUITestsLaunchTests.m; sourceTree = "<group>"; };
+		A3BA6E43278BF0AC00DD59BD /* WJLocalNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJLocalNetWorkManager.h; sourceTree = "<group>"; };
+		A3BA6E44278BF0AC00DD59BD /* WJLocalNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJLocalNetWorkManager.m; sourceTree = "<group>"; };
+		A3BA6E47278BF0C200DD59BD /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BA6E48278BF0C200DD59BD /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,7 @@
 				A3BA6E29278BF09800DD59BD /* WJLocalNetWorkManagerTests */,
 				A3BA6E33278BF09800DD59BD /* WJLocalNetWorkManagerUITests */,
 				A3BA6E0C278BF09700DD59BD /* Products */,
+				A3BA6E46278BF0C200DD59BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +111,8 @@
 		A3BA6E0D278BF09700DD59BD /* WJLocalNetWorkManager */ = {
 			isa = PBXGroup;
 			children = (
+				A3BA6E43278BF0AC00DD59BD /* WJLocalNetWorkManager.h */,
+				A3BA6E44278BF0AC00DD59BD /* WJLocalNetWorkManager.m */,
 				A3BA6E0E278BF09700DD59BD /* AppDelegate.h */,
 				A3BA6E0F278BF09700DD59BD /* AppDelegate.m */,
 				A3BA6E11278BF09700DD59BD /* SceneDelegate.h */,
@@ -134,6 +143,14 @@
 				A3BA6E36278BF09800DD59BD /* WJLocalNetWorkManagerUITestsLaunchTests.m */,
 			);
 			path = WJLocalNetWorkManagerUITests;
+			sourceTree = "<group>";
+		};
+		A3BA6E46278BF0C200DD59BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3BA6E47278BF0C200DD59BD /* Network.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +285,7 @@
 			files = (
 				A3BA6E16278BF09700DD59BD /* ViewController.m in Sources */,
 				A3BA6E10278BF09700DD59BD /* AppDelegate.m in Sources */,
+				A3BA6E45278BF0AC00DD59BD /* WJLocalNetWorkManager.m in Sources */,
 				A3BA6E21278BF09800DD59BD /* main.m in Sources */,
 				A3BA6E13278BF09700DD59BD /* SceneDelegate.m in Sources */,
 			);
@@ -460,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aomei.WJLocalNetWorkManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -487,7 +505,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aomei.WJLocalNetWorkManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
